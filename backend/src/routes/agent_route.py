@@ -36,8 +36,12 @@ Never assume any value, try to use the tools otherwise always ask for clarity if
     )
     return formatted_messages
 
-
-model = ChatOpenAI(model=config.OPENAI_MODEL, api_key=config.OPENAI_API_KEY)
+#model = ChatOpenAI(model=config.OPENAI_MODEL, api_key=config.OPENAI_API_KEY)
+model = ChatOpenAI(
+    model=config.OPENAI_MODEL,
+    api_key=config.OPENAI_API_KEY,
+    base_url=config.GROQ_BASE_URL
+)
 
 tools = []
 

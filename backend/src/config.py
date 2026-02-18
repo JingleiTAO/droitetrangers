@@ -10,7 +10,10 @@ SERVER_API_KEY = os.getenv("SERVER_API_KEY")
 
 PORT = int(os.getenv("PORT"))
 
-OPENAI_MODEL = "gpt-4o-mini"
+#OPENAI_MODEL = "gpt-4o-mini"
+OPENAI_MODEL = "openai/gpt-oss-120b"
+
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 API_VERSION = "v0"
 
