@@ -6,8 +6,8 @@ from src.routes import agent_route
 from src import config
 
 app = FastAPI(
-    title="Table Booking Agent",
-    description="AI agent to handle reservation at businesses.",
+    title="Droit Étrangers AI Assistant",
+    description="专业法国移民换居留法律咨询助手",
     version=config.API_VERSION,
 )
 
