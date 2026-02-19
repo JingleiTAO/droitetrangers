@@ -24,7 +24,7 @@ type Message = {
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([
-    { id: 1, text: "Hello! How can I help you today?", sender: "assistant" }
+    { id: 1, text: "Bonjour ! Comment je peux vous aider ?", sender: "assistant" }
   ])
   const [newMessage, setNewMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
